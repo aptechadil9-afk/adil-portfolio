@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ADIL. | Web & App Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Portfolio of a web developer focused on responsive design, Shopify and React.">
+  
+  <!-- Stylesheets & Fonts -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+
+  <!-- Main Navigation Bar -->
+  <nav aria-label="Main">
+    <a href="#home" class="logo">ADIL.</a>
+    <button id="burger" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">☰</button>
+    <ul id="menu"></ul>
+  </nav>
+  <main>
+    <!-- Section 00: Hero / Home -->
+    <section id="home" class="hero">
+      <div class="rv">
+        <small>👋 HELLO, I'M</small>
+        <h1>ADIL<br><span class="or">NAWAZ</span></h1>
+        <p>
+          Experienced Web Developer focused on responsive design, high performance, 
+          creative user experiences, modern UI/UX solutions, and building fast websites for clients worldwide.
+        </p>
+        <a class="btn" href="#portfolio">My Portfolio</a> 
+        <a class="btn ghost" href="#contact">Hire Me</a> 
+        <a class="btn ghost" id="hcv" target="_blank" rel="noopener" href="#">Download CV</a>
+      </div>
+
+      <div class="stage hero-img">
+        <img 
+          src="images/hero.webp" 
+          width="640" 
+          height="520" 
+          alt="Illustrated developer with headphones surrounded by HTML, CSS, JavaScript, React and Figma icons" 
+          fetchpriority="high"
+        >
+      </div>
+    </section>
+    <!-- Section 01: About Me -->
+    <section id="about" class="about">
+      <div class="stage rv hero-img">
+        <img 
+          src="images/about.webp" 
+          width="650" 
+          height="540" 
+          loading="lazy" 
+          alt="Illustrated developer speaking into a studio microphone"
+        >
+      </div>
+
+      <div class="rv">
+        <div class="sh" style="text-align:left;margin:0">
+          <h2>ABOUT <span>ME</span></h2>
+          <i>01</i>
+        </div>
+        <p style="color:var(--tx2)">
+         Hello, I'm Adil Nawaz, <strong style="color:#fff">a Web Developer in the making</strong>
+         and Software Engineering student at Aptech, with 6+ months of hands-on practice building responsive websites.
+        I enjoy turning designs into clean, interactive interfaces using HTML, CSS and JavaScript,
+        and I'm currently exploring eCommerce and Shopify development to grow my skills
+        and build real, user-friendly online stores.
+        </p>
+        <!-- Dynamic Containers for JS Injection -->
+        <div class="facts" id="facts"></div>
+        <div class="stats" id="stats"></div>
+        
+        <div style="margin-top:24px">
+          <a class="btn" id="lt" target="_blank" rel="noopener" href="#">Let's Talk</a> 
+          <a class="btn ghost" id="cv" target="_blank" rel="noopener" href="#">Download CV</a>
+        </div>
+      </div>
+    </section>
+    <!-- Section 02: Skills -->
+    <section id="skills">
+      <div class="sh rv">
+        <h2>MY <span>SKILLS</span></h2>
+        <i>02</i>
+        <p>The technologies and tools I use to build for the web.</p>
+      </div>
+      <div class="panels" id="skl"></div>
+    </section>
+
+    <!-- Section 03: Services -->
+    <section id="services">
+      <div class="sh rv">
+        <h2>MY <span>SERVICES</span></h2>
+        <i>03</i>
+       <p>Responsive web development and creative design, tailored to your business needs.</p>
+      </div>
+      <div class="cards" id="svc"></div>
+    </section>
+    <!-- Section 04: Portfolio -->
+    <section id="portfolio">
+      <div class="sh rv">
+        <h2>MY <span>PORTFOLIO</span></h2>
+        <i>04</i>
+       <p>A collection of websites and interfaces I've built while learning and growing as a web developer.</p>
+      </div>
+      
+      <div class="filters" id="flt" role="group" aria-label="Filter projects"></div>
+      <div class="grid" id="prj"></div>
+      
+      <div style="text-align:center;margin-top:30px">
+        <button class="btn ghost" id="more">Load more</button>
+      </div>
+    </section>
+    <!-- Section 05: Resume & History -->
+    <section id="resume">
+      <div class="sh rv">
+        <h2>RESUME &amp; <span>HISTORY</span></h2>
+        <i>05</i>
+        <p>Software engineering student building modern, responsive websites.</p>
+      </div>
+      
+      <div class="tl">
+        <div>
+          <h3>EXPERIENCE</h3>
+          <br>
+          <div id="exp"></div>
+        </div>
+        <div>
+          <h3>EDUCATION</h3>
+          <br>
+          <div id="edu"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 06: Client Logos -->
+    <section id="clients">
+      <div class="sh rv">
+        <h2>THE CLIENTS <span>WHO TRUST US</span></h2>
+        <i>06</i>
+        <p>We work with brands from different industries, helping them strengthen their online presence and grow their business.</p>
+      </div>
+      <div class="logos" id="lg"></div>
+    </section>
+    <!-- Section 07: Footprint -->
+    <section id="footprint">
+      <div class="sh rv">
+        <h2>OUR PAKISTAN <span>FOOTPRINT</span></h2>
+        <i>07</i>
+        <p>Built in Karachi. Growing across Pakistan.</p>
+      </div>
+
+      <div class="fp4">
+        <div class="card rv"><b data-n="30+">0</b><span>Brands Grown Across Pakistan</span></div>
+        <div class="card rv"><b data-n="2+">0</b><span>Projects Successfully Delivered</span></div>
+        <div class="card rv"><b data-n="1">0</b><span>Major Cities Covered</span></div>
+        <div class="card rv"><b data-n="60%">0</b><span>Client Satisfaction Rate</span></div>
+      </div>
+
+      <div class="card hub rv">
+        <small class="or" style="letter-spacing:.2em">CLIENT NETWORK 2+</small>
+        <h3>Built in Karachi.<br>Growing across Pakistan.</h3>
+        
+        <svg viewBox="0 0 120 80" width="160" aria-hidden="true">
+          <path d="M50 4l18 10 14 14-8 14 14 12-18 22H44L30 56l8-18-12-16z" fill="#111" stroke="#FFA500" stroke-width="1.5"/>
+          <circle cx="52" cy="62" r="3" fill="#22C55E"/>
+        </svg>
+        
+        <p style="margin:0">
+          <span class="dot"></span> <b>KARACHI</b> — PRIMARY CLIENT HUB<br>
+          <small style="color:var(--tx2)">24.8607° N, 67.0011° E · Active Operations</small>
+        </p>
+      </div>
+    </section>
+    <!-- Section 08: Testimonials Carousel -->
+    <section id="testimonials">
+      <div class="sh rv">
+        <h2>CLIENT <span>SAY</span></h2>
+        <i>03</i>
+        <p>What my clients say about working with me.</p>
+      </div>
+
+      <div class="car" id="car" tabindex="0" aria-roledescription="carousel" aria-label="Testimonials">
+        <div class="track" id="trk"></div>
+      </div>
+
+      <div class="ctl">
+        <button id="pv" aria-label="Previous">‹</button>
+        <span class="dots" id="dts"></span>
+        <button id="nx" aria-label="Next">›</button>
+        <button id="pp" aria-label="Pause rotation">❚❚</button>
+      </div>
+    </section>
+
+    <!-- Section 09: Pricing Packages -->
+    <section id="pricing">
+      <div class="sh rv">
+        <h2>SIMPLE. <span>BRILLIANT.</span> FAIR.</h2>
+        <i>09</i>
+        <p>Flexible packages crafted for startups, personal brands and growing businesses.</p>
+      </div>
+      <div class="pricing" id="pkg"></div>
+    </section>
+    <!-- Section 10: Contact Us Form -->
+    <section id="contact">
+      <div class="sh rv">
+        <h2>LET'S BUILD SOMETHING <span>EXTRAORDINARY</span></h2>
+        <i>10</i>
+      </div>
+
+      <div class="cbox">
+        <!-- Eye Tracking Graphic Badge -->
+        <div>
+          <small class="or" style="border:1px solid var(--bd);border-radius:20px;padding:6px 14px;font-weight:700">
+            INTERACTIVE EXPERIENCE
+          </small>
+          <div class="eyes" aria-hidden="true">
+            <div class="eye"><i></i></div>
+            <div class="eye"><i></i></div>
+          </div>
+          <span class="badge">All eyes on your growth</span>
+        </div>
+
+        <!-- Contact Form Fields -->
+        <div>
+          <small class="or" style="letter-spacing:.2em;font-weight:700">START A CONVERSATION</small>
+          <h3 style="font:700 2rem Arial;text-transform:none;margin:6px 0">Free consultation</h3>
+          <p style="color:var(--tx2);font-size:.9rem">Share your requirements and I'll reply with next steps.</p>
+
+          <form id="f" novalidate>
+            <div>
+              <label for="n">Your name</label>
+              <input id="n" autocomplete="name" placeholder="Enter your name">
+              <span class="err" id="e-n"></span>
+            </div>
+
+            <div>
+              <label for="em">Email</label>
+              <input id="em" type="email" autocomplete="email" placeholder="name@company.com">
+              <span class="err" id="e-em"></span>
+            </div>
+
+            <div>
+              <label for="ph">Phone (optional)</label>
+              <input id="ph" type="tel" autocomplete="tel" placeholder="+92 ...">
+            </div>
+
+            <div>
+              <label for="bd">Monthly budget</label>
+              <select id="bd">
+                <option value="">Select budget</option>
+                <option>Under $100</option>
+                <option>$100–$250</option>
+                <option>$250–$500</option>
+                <option>$500–$1,000</option>
+                <option>$1,000+</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="w">
+              <label for="pk">Package</label>
+              <select id="pk"></select>
+            </div>
+
+            <div class="w">
+              <label for="msg">Tell us about your project</label>
+              <textarea id="msg" rows="4" placeholder="What would you like to achieve?"></textarea>
+              <span class="err" id="e-msg"></span>
+            </div>
+
+            <div class="w">
+              <button class="btn" id="sb" style="width:100%">Send enquiry</button>
+            </div>
+
+            <div class="w" id="note" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Main Page Footer -->
+  <footer>
+    <div class="mq" aria-hidden="true">
+      <span>LET'S CREATE SOMETHING AMAZING — LET'S CREATE SOMETHING AMAZING — </span>
+      <span>LET'S CREATE SOMETHING AMAZING — LET'S CREATE SOMETHING AMAZING — </span>
+    </div>
+
+    <div class="fgrid">
+      <div>
+        <span class="logo">ADIL</span>
+        <p>
+          Experienced Web Developer Focused on Responsive Design, High Performance, 
+          Creative User Experiences, Modern UI/UX Solutions, and Building Fast for Clients Worldwide.
+        </p>
+      </div>
+
+      <ul class="fl">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div>
+        <a href="mailto:aptechadil9@gmail.com" style="color:#fff;font-size:1.1rem">aptechadil9@gmail.com</a>
+        <div class="soc">
+          <a href="https://www.linkedin.com/in/adil-aptech-b35092441/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://wa.me/923012727342" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+        </div>
+      </div>
+    </div>
+
+    <p>© 2026 <span class="or">ADIL</span> — All Rights Reserved</p>
+  </footer>
+
+  <!-- Floating Action Buttons & JavaScript Link -->
+  <a class="wa" id="wa" href="#contact" rel="noopener" aria-label="Contact on WhatsApp">✆</a>
+  <button class="top" id="top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
